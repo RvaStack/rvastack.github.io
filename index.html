@@ -1,10 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>RvaStack Research</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Passos | Anti-Cheat Researcher</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Anti-Cheat & Malware Research Portfolio</h1>
-    <p>Site em construção...</p>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">&lt;Gabriel Passos/&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#focus">Foco Técnico</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero container" id="inicio">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting fade-in">Olá, eu sou</p>
+
+                <h1 class="fade-in delay-1">
+                    Gabriel <span class="highlight">Passos</span>
+                </h1>
+
+                <p class="role fade-in delay-2">Security Research & Anti-Cheat Engineering</p>
+
+                <p class="bio fade-in delay-3">
+                    Engenharia reversa, Windows Internals e análise comportamental aplicada à segurança. <br>Desenvolvimento em C++, Rust e Python com foco em mecanismos defensivos e pesquisa inspirada em anti-cheat e proteção contra malware.
+                </p>
+
+                <div class="cta-buttons fade-in delay-4">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="https://github.com/RvaStack" class="btn btn-secondary">GitHub</a>
+                </div>
+            </div>
+
+
+            <div class="hero-image fade-in delay-3">
+                <div class="image-wrapper">
+                    <img src="assets/me.jpeg" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Sobre</span>
+                <h2 class="section-title">Sobre Mim</h2>
+            </div>
+
+            <div class="about-box">
+
+            <p class="about-intro">
+                Profissional de Segurança da Informação com atuação em pentests internos e externos,
+                desenvolvimento de ferramentas e análise técnica de baixo nível.
+                Trabalho com C/C++, Rust e Python aplicados à automação e análise comportamental,
+                explorando engenharia reversa, Windows Internals e superfícies de detecção relacionadas a anti-cheat e tecnologias de defesa contra malware.
+            </p>
+            <div class="tech-stack">
+
+                <span class="tech-label">Tecnologias & Linguagens</span>
+
+                <div class="tech-tags">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Rust</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Shell</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Windows</span>
+                    <span class="tech-tag">Linux</span>
+                    <span class="tech-tag">AWS</span>
+                </div>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-item">
+                    <h3>Experiência em Segurança</h3>
+                    <p>
+                        Atuação em pentests internos e externos, gestão de vulnerabilidades,
+                        campanhas de Red Team e uso de ferramentas como Nessus, Acunetix,
+                        Prisma Cloud e Qualys.
+                    </p>
+                </div>
+
+                <div class="about-item">
+                    <h3>Desenvolvimento & Cloud</h3>
+                    <p>
+                        Desenvolvimento de soluções internas e integrações em AWS para geração
+                        de relatórios, automação e monitoramento de indicadores de segurança.
+                    </p>
+                </div>
+
+                <div class="about-item">
+                    <h3>Pesquisa Técnica</h3>
+                    <p>
+                        Estudos em engenharia reversa, análise de binários, malware analysis, Anti-Cheat
+                        e funcionamento interno de aplicações Windows.
+                    </p>
+                </div>
+
+                <div class="about-item">
+                    <h3>Ferramentas Low-Level</h3>
+                    <p>
+                        Experiência com IDA Pro, x64dbg, Ghidra, Frida, EasyHook e MinHook/Detours
+                        explorando execução, memória e mecanismos defensivos.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJETOS -->
+    <section id="projetos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Projetos</span>
+                <h2 class="section-title">Projetos</h2>
+            </div>
+
+            <div class="projects-grid" id="projectsContainer"></div>
+        </div>
+    </section>
+
+    <!-- FOCO TÉCNICO -->
+    <section id="focus">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Foco</span>
+                <h2 class="section-title">Foco Técnico</h2>
+            </div>
+
+            <div class="focus-grid">
+
+                <div class="focus-item">
+                    <h3>Windows Internals</h3>
+                    <p>Comportamento de processos, estruturas de memória, fluxo de execução e conceitos de baixo nível.</p>
+                </div>
+
+                <div class="focus-item">
+                    <h3>Engenharia Reversa</h3>
+                    <p>Análise de binários, parsing de PE e inspeção em tempo de execução utilizando ferramentas modernas.</p>
+                </div>
+
+                <div class="focus-item">
+                    <h3>Detecção Comportamental</h3>
+                    <p>Estudo de indicadores comportamentais, padrões de anomalia e abordagens defensivas.</p>
+                </div>
+
+                <div class="focus-item">
+                    <h3>Análise de Memória</h3>
+                    <p>Interação externa, conceitos de injeção e técnicas de monitoramento de execução.</p>
+                </div>
+
+                <div class="focus-item">
+                    <h3>Conceitos de Anti-Cheat</h3>
+                    <p>Superfícies de detecção, lógica de monitoramento e experimentação defensiva em ambientes controlados.</p>
+                </div>
+
+                <div class="focus-item">
+                    <h3>Ferramentas de Segurança</h3>
+                    <p>Desenvolvimento de ferramentas internas em C/C++, Rust e Python para automação e pesquisa técnica.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <div class="contact-header">
+                <h2>Contato</h2>
+                <p>Interessado em colaborar ou discutir segurança e pesquisa técnica.</p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/RvaStack" class="social-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/gabriel-passos-dev/" class="social-link">LinkedIn</a>
+                <a href="mailto:gabriel.passos.dev@gmail.com" class="social-link">Enviar Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            © 2026 Gabriel Passos — Security Research Portfolio
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-body">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-description">
+                    Detalhes técnicos do projeto aparecerão aqui.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
