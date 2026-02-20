@@ -864,7 +864,27 @@
             background:rgba(0,255,157,.15);
             transform:translateY(-1px);
         }
-.bio{
-    border-left:2px solid rgba(0,255,157,.3);
-    padding-left:1rem;
+        .bio{
+            border-left:2px solid rgba(0,255,157,.3);
+            padding-left:1rem;
+        }
+.article-item{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+
+.article-thumb{
+    width:120px;
+    height:70px;
+    border-radius:8px;
+    overflow:hidden;
+    flex-shrink:0;
+    border:1px solid var(--border-color);
+}
+
+.article-thumb img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
